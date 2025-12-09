@@ -21,13 +21,9 @@ mini-calculator/
 └── v2-poo-calculator/
 
     ├── .gitignore
-
     ├── poo_calculator.py
-
     ├── README.md
-
     ├── requirements.txt
-
     └── test_poo_calculator.py
 
 ---

@@ -21,13 +21,9 @@ mini-calculator/
 └── v3-tkinter-calculator/
 
     ├── .gitignore
-
     ├── README.md
-
     ├── requirements.txt
-
     ├── test_tkinter_calculator.py
-
     └── tkinter_calculator.py
 
 ---

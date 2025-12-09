@@ -21,13 +21,9 @@ mini-calculator/
 └── v1-simple-calculator/
 
 	├── .gitignore
-
 	├── README.md
-
 	├── requirements.txt
-
 	├── simple_calculator.py
-
 	└── test_simple_calculator.py
 
 ---
