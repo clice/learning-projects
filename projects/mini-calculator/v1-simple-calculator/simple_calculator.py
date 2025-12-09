@@ -49,16 +49,16 @@ def main():
 	# Loop principal: mantém o programa rodando até o usuário escolher sair
 	while True:
 		mostrar_menu()  # Exibe o menu sempre no início do loop
-		opcao = input("Escolha uma opção: ")
+		opcao = input("\nEscolha uma opção: ")
 
 		# Se a opção for 5, o usuário quer sair
 		if opcao == "5":
-			print("Saindo... Até mais!")
+			print("\nSaindo... Até mais!")
 			break  # Encerra o loop e, consequentemente, o programa
 
 		# Se a opção não estiver entre 1, 2, 3 ou 4, é inválida
 		if opcao not in ("1", "2", "3", "4"):
-			print("Opção inválida. Tente de novo.")
+			print("\nOpção inválida. Tente de novo.")
 			continue  # Volte para o início do loop
 
 		# Se chegou aqui, a opção é válida. Agora, lê os dois números

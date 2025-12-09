@@ -16,17 +16,19 @@ Projeto simples para treinar lógica, funções, entrada de dados e organizaçã
 
 ## 📁 Estrutura
 
-calculator/
+mini-calculator/
 
-├── .gitignore
+└── v1-simple-calculator/
 
-├── README.md
+	├── .gitignore
 
-├── requirements.txt
+	├── README.md
 
-├── simple_calculator.py
+	├── requirements.txt
 
-└── test_simple_calculator.py
+	├── simple_calculator.py
+
+	└── test_simple_calculator.py
 
 ---
 
@@ -36,16 +38,18 @@ calculator/
 python3 -m venv .venv            # Instalar o ambiente de execução
 source .venv/bin/activate        # Ativar o ambiente de execução
 pip install -r requirements.txt  # Instalar os módulos necessários para a execução
-python3 simple_calculator.py    # Executar o projeto
+python3 simple_calculator.py     # Executar o projeto
 deactivate                       # Desativar o ambiente de execução
 ```
 
 ---
 
-## ▶️ Como executar os tests
+## ▶️ Como executar os testes
 
 ```bash
-pytest -v  # Executar módulo de testes unitários
+source .venv/bin/activate  # Ativar o ambiente de execução
+pytest -v                  # Executar módulo de testes unitários
+deactivate                 # Desativar o ambiente de execução
 ```
 
 ---
