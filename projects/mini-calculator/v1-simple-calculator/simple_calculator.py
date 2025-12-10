@@ -81,7 +81,7 @@ def main():
 
 		# Só mostra o resultado se não for None (por exemplo, na divisão por zero)
 		if resultado is not None:
-			print(f"\n{num_1} {operacao} {num_2} = {resultado}")
+			print(f"\n{num_1} {operacao} {num_2} = {resultado:.2f}")
 
 
 # Garante que main() só será executada se esse arquivo for rodado diretamente

@@ -20,9 +20,9 @@ O objetivo é mostrar **minha prática diária**, minha evolução e variedade t
 ## ⭐ Projetos em destaque
 
 ### 🟣 Python Básico
-- Calculadora  
-- Gerador de senhas  
-- Conversor de temperaturas  
+- [Calculadora](projects/mini-calculator/)
+<!-- - [Gerador de Senhas](projects/password-generator/)
+- [Conversor de Temperaturas](projects/temperature-converter/) -->
 
 ### 🔵 Backend
 - API de lista de tarefas (Flask)  
