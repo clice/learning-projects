@@ -28,8 +28,8 @@ class Operacao(BaseModel):
 
 # Cria a aplicação FastAPI
 app = FastAPI(
-	title="API Calculadora", 
-	description="Uma API simples de calculadora para estudo",
+	title="FastAPI Calculadora", 
+	description="Uma FastAPI simples de calculadora para estudo",
 	version="1.0.0"
 )
 
@@ -119,6 +119,5 @@ def dividir(op: Operacao):
 	"""
 	# Verifica se o divisor é zero para evitar erro
 	if op.num_2 == 0:
-		raise ZeroDivisionError("Erro: divisão para zero!")
-		return None  # Usa None para indicar que não há resultado válido
+		return {"erro": "Divisão por zero não é permitida."}
 	return {"resultado": op.num_1 / op.num_2}

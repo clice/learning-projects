@@ -44,9 +44,12 @@ deactivate                             # Desativar o ambiente de execução
 ## ▶️ Como executar os testes
 
 ```bash
-source .venv/bin/activate  # Ativar o ambiente de execução
-pytest -v                  # Executar módulo de testes unitários
-deactivate                 # Desativar o ambiente de execução
+source .venv/bin/activate   # Ativar o ambiente de execução
+uvicorn main:app --reload   # Executar o projeto
+# No navegador acessar:
+http://127.0.0.1:8000/docs  # Testar individualmente as rotas
+
+deactivate                  # Desativar o ambiente de execução
 ```
 
 ---
