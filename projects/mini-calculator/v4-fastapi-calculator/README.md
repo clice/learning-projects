@@ -21,22 +21,22 @@ mini-calculator/
 └── v3-tkinter-calculator/
 
     ├── .gitignore
+    ├── main.py
     ├── README.md
     ├── requirements.txt
-    ├── test_fastapi_calculator.py
-    └── fastapi_calculator.py
+    └── test_main.py
 
 ---
 
 ## ▶️ Como executar o projeto
 
 ```bash
-python3 -m venv .venv            # Instalar o ambiente de execução
-source .venv/bin/activate        # Ativar o ambiente de execução
-pip install -r requirements.txt  # Instalar os módulos necessários para a execução
-sudo apt install python3-tk      # Instalar o Tkinter no Python (precisa instalar globalmente)
-python3 tkinter_calculator.py    # Executar o projeto
-deactivate                       # Desativar o ambiente de execução
+python3 -m venv .venv                  # Instalar o ambiente de execução
+source .venv/bin/activate              # Ativar o ambiente de execução
+pip install -r requirements.txt        # Instalar os módulos necessários para a execução
+pip install fastapi uvicorn[standard]  # Instalar o Tkinter no Python (precisa instalar globalmente)
+uvicorn main:app --reload              # Executar o projeto
+deactivate                             # Desativar o ambiente de execução
 ```
 
 ---
