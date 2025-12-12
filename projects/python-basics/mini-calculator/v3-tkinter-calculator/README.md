@@ -1,0 +1,67 @@
+# 🧮 Mini Calculadora — Python com Tkinter
+
+Projeto simples para treinar lógica, funções, entrada de dados e organização de código, utilizando o Tkinter para a criação de uma interface gráfica para construir uma calculadora.
+
+---
+
+## 🚀 Funcionalidades
+
+- Adição
+- Subtração
+- Multiplicação
+- Divisão com verificação de zero
+- Loop para repetir operações
+
+---
+
+## 📁 Estrutura
+
+mini-calculator/
+
+└── v3-tkinter-calculator/
+
+    ├── .gitignore
+    ├── README.md
+    ├── requirements.txt
+    ├── test_tkinter_calculator.py
+    └── tkinter_calculator.py
+
+---
+
+## ▶️ Como executar o projeto
+
+```bash
+python3 -m venv .venv            # Instalar o ambiente de execução
+source .venv/bin/activate        # Ativar o ambiente de execução
+pip install -r requirements.txt  # Instalar os módulos necessários para a execução
+sudo apt install python3-tk      # Instalar o Tkinter no Python (precisa instalar globalmente)
+python3 tkinter_calculator.py    # Executar o projeto
+deactivate                       # Desativar o ambiente de execução
+```
+
+---
+
+## ▶️ Como executar os testes
+
+```bash
+source .venv/bin/activate  # Ativar o ambiente de execução
+pytest -v                  # Executar módulo de testes unitários
+deactivate                 # Desativar o ambiente de execução
+```
+
+---
+
+## 📚 O que aprendi
+
+- Criar funções em Python
+- Validar entradas
+- Estruturar pequenos projetos
+- Tratar erros simples
+
+---
+
+## 🔮 Próximos passos
+
+- Adicionar operações avançadas
+- Criar testes unitários (pytest) ✅
+- Criar uma versão com interface em terminal ✅

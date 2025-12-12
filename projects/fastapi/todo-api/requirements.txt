@@ -1,0 +1,6 @@
+fastapi           # Framework para criação de APIs web rápidas
+uvicorn[stadard]  # Servidor ASGI para rodar a aplicação FastAPI
+sqlalchemy        # ORM para interagir com banco de dados (aqui usamos SQLite)
+pydamic           # Biblioteca para validação de dados e criação de modelos (FastAPI usa por baixo)
+pytest	          # Biblioteca para teste
+httpx             # 
