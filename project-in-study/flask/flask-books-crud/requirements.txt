@@ -1,0 +1,2 @@
+flask
+sqlite3-binary; python_version<'3.13'
