@@ -1,41 +1,66 @@
-# Função para ler um número do usuário de forma segura
+"""
+Calculadora simples em modo CLI (linha de comando).
+
+Este módulo implementa uma calculadora básica com as operações
+de soma, subtração, multiplicação e divisão, incluindo validação
+de entrada do usuário e tratamento de erros comuns.
+
+Projeto voltado para estudos de Python e boas práticas.
+"""
+
 def ler_numero(mensagem):
-	while True:  # Loop infinito até o usuário digitar um valor válido
+	"""
+    Lê um número digitado pelo usuário de forma segura.
+
+    Continua solicitando a entrada até que o usuário informe
+    um valor numérico válido.
+
+    Args:
+        mensagem (str): Texto exibido para solicitar a entrada.
+
+    Returns:
+        float: Número digitado pelo usuário.
+    """
+	while True:
 		try: 
-			# Tenta converter o que o usuário digitou para float
 			valor = float(input(mensagem))
-			return valor  # Se der certo, retorna o valor e sai da função
+			return valor
 		except ValueError:
-			# Se o usuário não digitar um número
+			# Evita que o programa quebre caso o usuário digite texto inválido
 			print("Valor inválido. Tente novamente.")
 
 
-# Função que soma dois números
 def somar(num_1, num_2):
+	"""Retorna a soma de dois números."""
 	return num_1 + num_2
 
 
-# Função que subtrai dois números
 def subtrair(num_1, num_2):
+	"""Retorna a subtração de dois números."""
 	return num_1 - num_2
 
 
-# Função que multiplica dois números 
 def multiplicar(num_1, num_2):
+	"""Retorna a multiplicação de dois números."""
 	return num_1 * num_2
 
 
-# Função que divide dois números
 def dividir(num_1, num_2):
-	# Verifica se o divisor é zero para evitar erro
+	"""
+    Retorna a divisão entre dois números.
+
+    Raises:
+        ZeroDivisionError: Se o divisor for zero.
+    """
 	if num_2 == 0:
+		# Falha explícita: divisão por zero não é permitida
 		raise ZeroDivisionError("Erro: divisão por zero!")
-		return None  # Usa None para indicar que não há resultado válido
+		return None
 	return num_1 / num_2
 
 
-# Função que mostra o menu de opções da calculadora
 def mostrar_menu():
+	"""Exibe o menu de opções da calculadora."""
 	print("\n=== CALCULADORA ===")
 	print("1) Somar")
 	print("2) Subtrair")
@@ -44,11 +69,15 @@ def mostrar_menu():
 	print("5) Sair")
 
 
-# Função principal do programa
 def main():
-	# Loop principal: mantém o programa rodando até o usuário escolher sair
+	"""
+    Função principal da aplicação.
+
+    Controla o fluxo do programa, exibindo o menu,
+    lendo as entradas do usuário e chamando as operações.
+    """
 	while True:
-		mostrar_menu()  # Exibe o menu sempre no início do loop
+		mostrar_menu()
 		opcao = input("\nEscolha uma opção: ")
 
 		# Se a opção for 5, o usuário quer sair
@@ -84,6 +113,5 @@ def main():
 			print(f"\n{num_1} {operacao} {num_2} = {resultado:.2f}")
 
 
-# Garante que main() só será executada se esse arquivo for rodado diretamente
 if __name__ == "__main__":
     main()
